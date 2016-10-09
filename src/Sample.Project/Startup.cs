@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -52,6 +53,9 @@ namespace Sample.Project
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+
+            services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, AppClaimsPrincipalFactory>();
+
             services.AddMvc();
 
             // Add application services.
@@ -85,6 +89,15 @@ namespace Sample.Project
             app.UseIdentity();
 
             // Add external authentication middleware below. To configure them please see http://go.microsoft.com/fwlink/?LinkID=532715
+
+
+            app.UseFacebookAuthentication(new FacebookOptions()
+            {
+                Scope = {"public_profile" , "email" },
+                AppId = "195690790842990",
+                AppSecret = "3a78dec1589f11bcf2d1f58952644ee6"
+            });
+
 
             app.UseMvc(routes =>
             {

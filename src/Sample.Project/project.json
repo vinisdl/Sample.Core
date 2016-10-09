@@ -1,4 +1,4 @@
-﻿{
+{
   "userSecretsId": "aspnet-Sample.Project-cb9d2a26-7722-431d-bb02-79c4f2a9954d",
 
   "dependencies": {
@@ -41,10 +41,11 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
-    "Microsoft.VisualStudio.Web.CodeGenerators.Mvc":  {
+    "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": {
       "version": "1.0.0-preview2-final",
       "type": "build"
-    }
+    },
+    "Microsoft.AspNetCore.Authentication.Facebook": "1.0.0"
   },
 
   "tools": {

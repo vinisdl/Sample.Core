@@ -1,5 +1,5 @@
---temp-output:D:\Projetos\Sample.Project\src\Sample.Project\obj\Debug\netcoreapp1.0\
---out:D:\Projetos\Sample.Project\src\Sample.Project\bin\Debug\netcoreapp1.0\Sample.Project.dll
+--temp-output:D:\Projetos\Sample.Project\src\Sample.Project\bin\src\Sample.Project\obj\Debug\netcoreapp1.0\
+--out:D:\Projetos\Sample.Project\src\Sample.Project\bin\src\Sample.Project\bin\Debug\netcoreapp1.0\Sample.Project.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -231,8 +231,7 @@
 --reference:C:\Users\marco.dalalba\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\marco.dalalba\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\marco.dalalba\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"D:\Projetos\Sample.Project\src\Sample.Project\obj\Debug\netcoreapp1.0\Sample.Projectdotnet-compile.deps.json",Sample.Project.deps.json
-D:\Projetos\Sample.Project\src\Sample.Project\AppClaimsPrincipalFactory.cs
+--resource:"D:\Projetos\Sample.Project\src\Sample.Project\bin\src\Sample.Project\obj\Debug\netcoreapp1.0\Sample.Projectdotnet-compile.deps.json",Sample.Project.deps.json
 D:\Projetos\Sample.Project\src\Sample.Project\Program.cs
 D:\Projetos\Sample.Project\src\Sample.Project\Startup.cs
 D:\Projetos\Sample.Project\src\Sample.Project\Controllers\AccountController.cs
