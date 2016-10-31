@@ -1,4 +1,2 @@
 exclude_paths:
   - Sample.Core/wwwroot
-  - *.js
-  - *.css
